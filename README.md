@@ -14,22 +14,20 @@ Machine Learning Models Used:
   K-Nearest Neighbors (KNN): A simple algorithm that stores available cases and classifies new data based on a similarity measure.
   Decision Tree: Continuously splits data based on specific parameters. The model consists of decision nodes, where data is split, and leaves, which represent final classification    outcomes.
   Random Forest: Constructs multiple decision trees during training and outputs the class that is the majority vote of all trees.
+
 Step-by-Step Approach:
-  Feature Selection.
+  Feature Selection: Confusion Matrix plus ANOVA Test.
   Identified relevant variables while discarding irrelevant inputs.
   Simplified models improve interpretability and often lead to better performance.
   Avoided overfitting (excessively complex models) while ensuring the model had enough learning capability.
   Model Training & Prediction.
   Fitted the models to the dataset and generated predictions.
-Accuracy Evaluation
-Confusion Matrix: A table to visualize the algorithm’s performance.
-
-Classification Report:
-Precision: The ratio of true positives (TP) to total predicted positives (TP + FP).
-Recall: The ratio of true positives (TP) to actual positives (TP + FN).
-F1-score: A weighted harmonic mean of precision and recall, where a score of 1 is the best and 0 is the worst.
-Support: The number of occurrences of each class in y_test.
-Cross-Validation
-
-Used to assess the model’s generalizability by splitting the dataset into multiple subsets.
+  Accuracy Evaluation:
+      Confusion Matrix: A table to visualize the algorithm’s performance.
+      Classification Report
+      Precision: The ratio of true positives (TP) to total predicted positives (TP + FP).
+      Recall: The ratio of true positives (TP) to actual positives (TP + FN).
+      F1-score: A weighted harmonic mean of precision and recall, where a score of 1 is the best and 0 is the worst.
+      Support: The number of occurrences of each class in y_test.
+      Cross-Validation - used to assess the model’s generalizability by splitting the dataset into multiple subsets.
 Implemented k-fold cross-validation, where k (CV parameter) defines the number of groups the dataset is divided into.
